@@ -1,2 +1,9 @@
-@import './common';
-@import './example';
+@import './utils/reset';
+@import './utils/variables';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/offerings';
+@import './layout/favorites';
+@import './layout/customers-say';
+@import './layout/subscribe';
+@import './layout/footer';

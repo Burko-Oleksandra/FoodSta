@@ -1,0 +1,15 @@
+// Кольори
+
+$accentColor: #ffe550;
+$hoverColor: #bbf330;
+$iconColor: #7eb101;
+$textColor: #2c2c2c;
+$shadowColor: radial-gradient(
+  50% 50% at 50% 50%,
+  #2f583f 0%,
+  rgba(105, 105, 105, 0) 100%
+);
+
+// Кубік
+
+$timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
