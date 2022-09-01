@@ -14,14 +14,12 @@ ul,
 ol {
   margin: 0;
   padding-left: 0;
-}
-
-button {
-  cursor: pointer;
+  list-style: none;
 }
 
 a {
   color: currentColor;
+  text-decoration: none;
 }
 address {
   font-style: normal;
