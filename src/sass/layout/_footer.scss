@@ -1,4 +1,11 @@
 
+.footer__logo-nav-sub {
+    @media screen and (min-width:1280px) {
+        display: flex;
+    }
+}
+
+
 .footer__logo-nav {
     display: flex;
 }
@@ -10,6 +17,9 @@
         margin-right: 114px;
         margin-bottom: 40px;
     }
+    @media screen and (min-width:1280px) {
+        margin-bottom: auto;
+    }
 }
 
 .site-navigation__list {
@@ -20,6 +30,11 @@
 
     @media screen and (min-width:768px) {
         display: flex;
+
+        @media screen and (min-width:1280px) {
+        margin-top: 18px;
+        margin-bottom: 0;
+        }
         
     }
     
@@ -68,19 +83,29 @@ color: #505050;
 
     padding: 12px 12px;
     margin-bottom: 20px;
+    @media screen and (min-width:768px) {
+        width: 279px;
+        margin-bottom: 0;
+    }
+    
 
 }
 
 .footer__form {
     @media screen and (min-width:768px) {
         display: flex;
+        margin-bottom: 12px;
+      
     }
 }
+
 
 .footer__button {
 
     align-items: center;
     justify-content: center;
+    width: 103px;
+    height: 42px;
 
     font-weight: 500;
     font-size: 13px;
@@ -92,16 +117,17 @@ color: #505050;
     border-radius: 30px;
 
     padding: 11px 22px;
-    margin-bottom: 20px;
+    margin-left: 20px;
 
     @media screen and (max-width:767px) {
-
         display: flex;
         margin-left: auto;
+        
     }
 
     @media screen and (min-width:768px) {
         margin-left: 13px;
+        margin-bottom: 0;
     }
 }
 
@@ -114,6 +140,10 @@ margin-bottom: 60px;
 
 @media screen and (min-width:768px) {
     margin-bottom: 100px;
+    font-size: 12px;
+}
+@media screen and (min-width:1280px) {
+    margin-bottom: 80px;
 }
 }
 
@@ -121,6 +151,21 @@ margin-bottom: 60px;
     color: #7EB101;
     text-decoration: underline;
 }
+
+.footer__subscription {
+    @media screen and (max-width:768px){
+   display: flex;
+   flex-direction: column;
+   
+   
+   
+    }
+
+    @media screen and (min-width:1280px) {
+        margin-left: auto;
+    }
+}
+
 
 .user-services {
 justify-content: space-between;
@@ -136,9 +181,11 @@ margin-bottom: 40px;
     @media screen and (max-width:767px) {
         display: flex;
         justify-content: space-between;
+        
     }
  @media screen and (min-width: 768px) {
     display: flex;
+    font-size: 12px;
  }
 }
 
@@ -166,5 +213,6 @@ line-height: 1.2;
 color: #2C2C2C;
 @media screen and (min-width:768px) {
     margin-left: auto;
+    font-size: 12px;
 }
 }
