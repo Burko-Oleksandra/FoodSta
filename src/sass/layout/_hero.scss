@@ -1,0 +1,25 @@
+.hero {
+  width: 100%;
+  padding-bottom: 50px;
+
+  &__title {
+    width: 280px;
+    padding-bottom: 28px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
+
+  &__text {
+    width: 266px;
+    padding-bottom: 28px;
+  }
+}
+
+.btn--hero {
+  padding: 6px 18px;
+
+  &:hover,
+  &:focus {
+    background-color: #b5ff00;
+  }
+}
