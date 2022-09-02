@@ -32,6 +32,7 @@
 
     @media screen and (min-width:768px) {
         display: flex;
+        margin-top: 18px;
 
         @media screen and (min-width:1280px) {
         margin-top: 18px;
@@ -93,6 +94,7 @@ color: #505050;
 
 }
 
+
 .footer__form {
     @media screen and (min-width:768px) {
         display: flex;
@@ -149,6 +151,7 @@ margin-bottom: 60px;
     margin-bottom: 80px;
 }
 }
+
 
 .footer__policy-accent {
     color: #7EB101;
