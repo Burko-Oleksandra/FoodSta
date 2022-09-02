@@ -111,6 +111,10 @@ font-size: 10px;
 line-height: 1.2;
 color: #2C2C2C;
 margin-bottom: 60px;
+
+@media screen and (min-width:768px) {
+    margin-bottom: 100px;
+}
 }
 
 .footer__policy-accent {
@@ -129,12 +133,38 @@ margin-bottom: 40px;
 }
 
 .user-services__list {
+    @media screen and (max-width:767px) {
+        display: flex;
+        justify-content: space-between;
+    }
+ @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+ }
+}
+
+.user-services__item {
+    @media screen and (min-width: 768px) {
+        margin-right: 20px;
+    }
+}
+
+.user-services__item:last-child {
+    @media screen and (min-width:768px) {
+        margin-right: 0;
+    }
+}
+
+.footer__services-copyright {
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
 }
 
 .footer__copyright {
 font-size: 10px;
 line-height: 1.2;
 color: #2C2C2C;
+@media screen and (min-width:768px) {
+    margin-left: auto;
+}
 }
