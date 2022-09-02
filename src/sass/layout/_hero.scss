@@ -1,17 +1,33 @@
 .hero {
-  width: 100%;
   padding-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+    padding-top: 60px;
+    position: relative;
+  }
 
   &__title {
     width: 280px;
     margin-bottom: 28px;
     font-size: 28px;
     line-height: 1.18;
+
+    @media screen and (min-width: 768px) {
+      width: 537px;
+      margin-bottom: 44px;
+      font-size: 42px;
+      line-height: 1.2;
+    }
   }
 
   &__text {
     width: 266px;
     margin-bottom: 28px;
+    @media screen and (min-width: 768px) {
+      width: 336px;
+      margin-bottom: 40px;
+      line-height: 1.5;
+    }
   }
 }
 
@@ -24,6 +40,16 @@
   }
 }
 
-// .swiper {
-//   display: none;
-// }
+.swiper {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    width: 292px;
+    right: 54px;
+    top: 149px;
+    z-index: 1;
+    border: 14px solid #ffe550;
+    border-radius: 50%;
+  }
+}
