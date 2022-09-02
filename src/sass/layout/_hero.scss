@@ -4,14 +4,14 @@
 
   &__title {
     width: 280px;
-    padding-bottom: 28px;
+    margin-bottom: 28px;
     font-size: 28px;
     line-height: 1.18;
   }
 
   &__text {
     width: 266px;
-    padding-bottom: 28px;
+    margin-bottom: 28px;
   }
 }
 
@@ -24,6 +24,6 @@
   }
 }
 
-.swiper {
-  display: none;
-}
+// .swiper {
+//   display: none;
+// }
