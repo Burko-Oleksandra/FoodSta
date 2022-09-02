@@ -1,1 +1,40 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';/*# sourceMappingURL=index.css.map */
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.offerings {
+  background-image: url(../src/images/mob/bg-mob.png);
+  width: 320px;
+  max-width: 100%;
+}
+
+.offerings__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  color: #2c2c2c;
+}
+
+.offerings__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #2c2c2c;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16;
+  color: #2c2c2c;
+}
+
+.about__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #2c2c2c;
+}
+
+.read-more {
+  font-size: 13.6667px;
+  line-height: 1.47;
+  color: #000000;
+}/*# sourceMappingURL=index.css.map */
