@@ -209,11 +209,19 @@ margin-bottom: 40px;
 }
 
 .footer__copyright {
+height: 60px;
 font-size: 10px;
 line-height: 1.2;
 color: #2C2C2C;
+text-align: center;
 @media screen and (min-width:768px) {
     margin-left: auto;
     font-size: 12px;
 }
+}
+
+.footer__background {
+    background-image: url(../images/footer/mobile/bottomx1.png), url(../images/footer/mobile/leftx1.png), url(../images/footer/mobile/rightx1.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom 0px left 43px, top 72px left 0px, top 0px right 0px;
 }
