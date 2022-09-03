@@ -1,9 +1,43 @@
-// .section.subscribe {
-//   background-image: url();
-// }
+.section.subscribe {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container.subscribe {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and(min-width:768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media screen and(min-width:1280px) {
+    display: inline-block;
+  }
+}
+
+.subscribe__bg {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media screen and (min-width: 768px) {
+    width: 281px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 546px;
+  }
+}
 
 .subscribe__title {
+  width: 280px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-family: 'Roboto';
   font-style: normal;
@@ -20,7 +54,10 @@
 }
 
 .subscribe__text {
+  width: 280px;
   margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-family: 'Roboto';
   font-style: normal;
@@ -31,22 +68,38 @@
   color: $textColor;
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
     font-size: 16px;
     line-height: 1.5;
   }
 }
 
+.subscribe__input {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+}
+
 .subscribe__email {
+  width: 100%;
   margin-bottom: 20px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 12px;
+  padding: 12 100 12 12;
   border: 1px solid $accentColor;
   border-radius: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 22px;
+    padding: 12 198 12 12;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+  }
 }
 
 .subscribe__email::placeholder {
-  padding: 0px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -54,4 +107,25 @@
   line-height: 1.5;
 
   color: #505050;
+}
+
+.subscribe__btn {
+  margin-left: auto;
+  padding: 11px 22px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.53;
+
+  color: $textColor;
+  background-color: $hoverColor;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
 }
