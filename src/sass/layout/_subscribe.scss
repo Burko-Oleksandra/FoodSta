@@ -78,14 +78,23 @@
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
-  border: 1px solid $accentColor;
+  border: 0.85px solid $accentColor;
   border-radius: 30px;
+  background-color: #fefefe;
 
   &::placeholder {
     font-size: 12px;
     line-height: 1.5;
 
     color: #505050;
+  }
+
+  &:invalid {
+    border-color: #ff705d;
+  }
+
+  &:valid {
+    border-color: $iconColor;
   }
 
   @media screen and (min-width: 768px) {
@@ -107,6 +116,10 @@
   padding: 11px 22px;
 
   color: $textColor;
+
+  &:active {
+    background-color: #b5ff00;
+  }
 
   @media screen and (min-width: 768px) {
     margin-left: 0;
