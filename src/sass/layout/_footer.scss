@@ -1,6 +1,6 @@
 .footer__background {
     background-color: #FEFEFE;
-    background-image: url(../images/footer/mobile/bottomx1.png), url(../images/footer/mobile/leftx1.png), url(../images/footer/mobile/rightx1.png);
+    background-image: url(../images/footer/mobile/bottom@x1.png), url(../images/footer/mobile/left@x1.png), url(../images/footer/mobile/right@x1.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: bottom 0px left 50%, top 132px left 0px, top 0px right 0px;
     background-size: 253px 66px, 110px 116px, 104px 259px;
@@ -8,7 +8,7 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../images/footer/mobile/bottomx2.png), url(../images/footer/mobile/leftx2.png), url(../images/footer/mobile/rightx2.png);
+        background-image: url(../images/footer/mobile/bottom@x2.png), url(../images/footer/mobile/left@x2.png), url(../images/footer/mobile/right@x2.png);
     }
 
 
