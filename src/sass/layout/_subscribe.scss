@@ -2,21 +2,25 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-}
 
-.container.subscribe {
-  display: flex;
-  flex-direction: column;
-
-  @media screen and(min-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  @media screen and(min-width: 1280px) {
-    display: inline-block;
+  @media screen and(min-width:768px) {
+    padding-top: 82px;
   }
 }
+
+// .container {
+//   display: flex;
+//   flex-direction: column;
+
+//   @media screen and(min-width: 768px) {
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//   }
+
+//   @media screen and(min-width: 1280px) {
+//     display: inline-block;
+//   }
+// }
 
 .subscribe__bg {
   position: absolute;
@@ -26,6 +30,7 @@
 
   @media screen and (min-width: 768px) {
     width: 281px;
+    left: 600px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -33,21 +38,18 @@
   }
 }
 
-.subscribe__title {
+.title {
   width: 280px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
 
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
   font-size: 28px;
   line-height: 1.21;
 
-  color: $textColor;
-
   @media screen and(min-width:768px) {
+    width: 656px;
+    margin-left: 0;
     font-size: 42px;
     line-height: 1.19;
   }
@@ -59,15 +61,12 @@
   margin-left: auto;
   margin-right: auto;
 
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
 
-  color: $textColor;
-
   @media screen and (min-width: 768px) {
+    width: 656px;
+    margin-left: 0;
     margin-bottom: 24px;
     font-size: 16px;
     line-height: 1.5;
@@ -75,33 +74,35 @@
 }
 
 .subscribe__input {
-  max-width: 280px;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
   text-align: right;
+
+  @media screen and (min-width: 768px) {
+    width: 519px;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .subscribe__email {
   width: 100%;
   margin-bottom: 20px;
-  padding: 12 100 12 12;
+  padding: 12px;
   border: 1px solid $accentColor;
   border-radius: 30px;
 
   @media screen and (min-width: 768px) {
+    width: 395px;
     margin-bottom: 0;
     margin-right: 22px;
-    padding: 12 198 12 12;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-right: 32px;
   }
 }
 
 .subscribe__email::placeholder {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
