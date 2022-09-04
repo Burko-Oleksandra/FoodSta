@@ -18,33 +18,34 @@
     background-image: url(../images/offerings/offerings-bg-mob-3x.png);
   }
   @media screen and (min-width: 768px) {
+    position: relative;
+    transform: translateY(-85px);
     background-image: url(../images/offerings/offerings-bg-tablet.png);
     padding-top: 108px;
     padding-bottom: 43px;
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/offerings/offerings-bg-tablet-2x.png);
-  }
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi),
-    (min-resolution: 3dppx) {
-    background-image: url(../images/offerings/offerings-bg-tablet-3x.png);
-
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/offerings-bg-tablet-2x.png);
+    }
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/offerings/offerings-bg-tablet-3x.png);
     }
   }
   @media screen and (min-width: 1280px) {
     background-image: url(../images/offerings/bg-desktop-1x.png);
     padding-top: 151px;
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/offerings/bg-desktop-2x.png);
-  }
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi),
-    (min-resolution: 3dppx) {
-    background-image: url(../images/offerings/bg-desktop-3x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/bg-desktop-2x.png);
+    }
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/offerings/bg-desktop-3x.png);
     }
   }
 }
@@ -53,10 +54,9 @@
   flex-direction: column;
   align-items: center;
   @media screen and (min-width: 1280px) {
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-top: 75px;
-
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 75px;
   }
 }
 /* apple */
@@ -137,12 +137,12 @@
   }
 }
 .tablet-apple {
-@media screen and (min-width: 768px) {
-display: flex;
-}
-@media screen and (min-width: 1280px) {
-align-items: flex-end;
-}
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1280px) {
+    align-items: flex-end;
+  }
 }
 .shadow {
   display: none;
@@ -161,7 +161,6 @@ align-items: flex-end;
   align-items: flex-end;
   margin-left: 29px;
   margin-bottom: 68px;
-
 }
 /* h2 p */
 .desktop__about {
@@ -270,7 +269,7 @@ align-items: flex-end;
   margin-bottom: 8px;
 }
 .about__text {
-    width: 252px;
+  width: 252px;
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.14;
@@ -290,24 +289,13 @@ align-items: flex-end;
     justify-content: flex-start;
   }
 }
-.btn {
-  width: 98px;
-  height: 32px;
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 1.5;
-  border-radius: 30px;
-  border: none;
-}
+
 .btn--style {
   width: 106px;
   height: 40px;
-  background: #ffffff;
+  background-color: #ffffff;
   border: 2px solid #7eb101;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms $timingFunction;
   &:hover,
   &:focus {
     border-color: #597d00;
