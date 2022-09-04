@@ -1,0 +1,117 @@
+.section.subscribe {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container.subscribe {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and(min-width:768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media screen and(min-width:1280px) {
+    display: inline-block;
+  }
+}
+
+.subscribe__bg {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media screen and (min-width: 768px) {
+    width: 281px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 546px;
+  }
+}
+
+.subscribe__title {
+  width: 280px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 656px;
+
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.subscribe__text {
+  width: 280px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 656px;
+    margin-bottom: 24px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.subscribe__input {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: start;
+
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 100%;
+  }
+}
+
+.subscribe__email {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid $accentColor;
+  border-radius: 30px;
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: #505050;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 22px;
+    width: 395px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 32px;
+  }
+}
+
+.subscribe__btn {
+  width: 103px;
+  height: 42px;
+
+  margin-left: auto;
+  padding: 11px 22px;
+
+  color: $textColor;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
+}
