@@ -5,50 +5,58 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 70px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/offerings/offerings-bg-mob-2x.png);
   }
   @media (min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi),
-    (min-resolution: 3dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url(../images/offerings/offerings-bg-mob-3x.png);
   }
   @media screen and (min-width: 768px) {
-    position: relative;
-    transform: translateY(-85px);
-    padding-top: 60px;
     background-image: url(../images/offerings/offerings-bg-tablet.png);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/offerings/offerings-bg-tablet-2x.png);
-    }
-    @media (min-device-pixel-ratio: 3),
-      (min-resolution: 288dpi),
-      (min-resolution: 3dppx) {
-      background-image: url(../images/offerings/offerings-bg-tablet-3x.png);
+    padding-top: 108px;
+    padding-bottom: 43px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/offerings/offerings-bg-tablet-2x.png);
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/offerings/offerings-bg-tablet-3x.png);
     }
   }
   @media screen and (min-width: 1280px) {
     background-image: url(../images/offerings/bg-desktop-1x.png);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/offerings/bg-desktop-2x.png);
-    }
-    @media (min-device-pixel-ratio: 3),
-      (min-resolution: 288dpi),
-      (min-resolution: 3dppx) {
-      background-image: url(../images/offerings/bg-desktop-3x.png);
+    padding-bottom: 43px;
+    padding-top: 151px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/offerings/bg-desktop-2x.png);
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/offerings/bg-desktop-3x.png);
     }
   }
 }
 .offerings__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media screen and (min-width: 1280px) {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 75px;
   }
 }
 /* apple */
@@ -69,13 +77,10 @@
     height: 357px;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 108px;
   }
   @media screen and (min-width: 1280px) {
     width: 550px;
     height: 550px;
-    margin-top: 151px;
-    margin-bottom: 43px;
     margin-right: 90px;
     margin-bottom: 0;
   }
@@ -110,46 +115,45 @@
   width: 128px;
   height: 44px;
   z-index: 0;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    #2f583f 0%,
-    rgba(105, 105, 105, 0) 100%
-  );
+  background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
   position: absolute;
   transform: translateY(185px);
   filter: blur(13.2364px);
-  @media screen and (min-width: 768px) {
-    width: 163px;
-    height: 56px;
-    transform: translateY(236px);
-    filter: blur(16.8764px);
-  }
-  @media screen and (min-width: 1280px) {
-    width: 252px;
-    height: 87px;
-    transform: translateY(364px);
-    filter: blur(26px);
-  }
+  @media screen and (min-width: 768px) { 
+  width: 163px;
+  height: 56px;
+  transform: translateY(236px);
+  filter: blur(16.8764px);
+}
+  @media screen and (min-width: 1280px) { 
+  width: 252px;
+  height: 87px;
+  transform: translateY(364px);
+  filter: blur(26px);
+}
 }
 .tablet-apple {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-  }
-  @media screen and (min-width: 1280px) {
-    align-items: flex-end;
-  }
+
+@media screen and (min-width: 768px) {
+display: flex;
+align-items: center;
+}
+@media screen and (min-width: 1280px) {
+display: flex;
+align-items: flex-end;
+}
+>>>>>>> f3a962deb24427aa2290c6045633e429273c339f
 }
 .shadow {
   display: none;
   @media screen and (min-width: 768px) {
-    display: flex;
-    width: 318px;
-    margin-bottom: 60px;
-  }
+  display: flex;
+  width: 318px;
+  margin-bottom: 60px;
+}
   @media screen and (min-width: 1280px) {
-    display: none;
-  }
+  display: none;
+}
 }
 .shadow__list {
   display: flex;
@@ -161,17 +165,20 @@
 }
 /* h2 p */
 .desktop__about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 60px;
-
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
+    padding-bottom: 57px;
   }
-
   @media screen and (min-width: 1280px) {
-    padding-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 57px;
   }
 }
 .main {
@@ -224,6 +231,9 @@
 }
 .about__item {
   width: 252px;
+  @media screen and (min-width: 768px) {
+    width: 252px;
+  }
   @media screen and (min-width: 1280px) {
     width: 253px;
   }
@@ -265,6 +275,15 @@
   margin-bottom: 8px;
 }
 .about__text {
+    width: 252px;
+  @media screen and (min-width: 480px) {
+    width: 252px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 252px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
   @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.5;
@@ -275,8 +294,14 @@
   display: flex;
   gap: 24px;
   align-items: center;
+  width: 272px;
+  margin-bottom: 0;
   @media screen and (min-width: 768px) {
     justify-content: flex-start;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0;
   }
 }
 .btn {
@@ -297,16 +322,16 @@
   border: 2px solid #7eb101;
   &:hover,
   &:focus {
-    border-color: #597d00;
-  }
+    border-color: #597D00;
+}
 }
 .read-more {
   font-size: 13.6667px;
   line-height: 1.47;
   color: #000000;
   @media screen and (min-width: 1280px) {
-    display: none;
-  }
+  display: none;
+}
 }
 .read-more::after {
   content: url(../images/offerings/bird.svg);
