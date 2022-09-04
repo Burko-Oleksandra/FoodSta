@@ -252,6 +252,7 @@ background-size: 203px 365px, 785px 141px;
     border: 0.854167px solid #FFE550;
     background: #FFFFFF; 
     border-radius: 30px;
+    outline: transparent;
 
     font-size: 12px;
 line-height: 1.5;
@@ -268,7 +269,7 @@ color: #505050;
 border: 1px solid #FF705D;
 }
 
-footer__input:not(:placeholder-shown):required:valid {
+.footer__input:not(:placeholder-shown):required:valid {
     border: 1px solid #7EB101;
 }
 
