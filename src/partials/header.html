@@ -1,0 +1,109 @@
+<header class="header container">
+  <div class="header-container">
+    <a href="" class="logo"
+      ><img src="/src/images/header/logo.svg" alt="logo"
+    /></a>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="">Home</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="">About</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="">Service</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="">Menu</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-btn">
+      <button type="button" class="open-modal">Order Now</button>
+      <button class="menu-open">
+        <svg class="menu-open__svg" width="28" height="28">
+          <use href="/src/images/header/close-open-menu.svg#icon-open"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- MENU -->
+  <div class="menu is-hidden">
+    <button class="menu-close">
+      <svg class="menu-close__svg" width="12" height="12">
+        <use href="/src/images/header/close-open-menu.svg#icon-close"></use>
+      </svg>
+    </button>
+    <ul class="menu-list">
+      <li class="menu-list__item">
+        <a class="menu-list__link" href="">Home</a>
+      </li>
+      <li class="menu-list__item">
+        <a class="menu-list__link" href="">About</a>
+      </li>
+      <li class="menu-list__item">
+        <a class="menu-list__link" href="">Service</a>
+      </li>
+      <li class="menu-list__item">
+        <a class="menu-list__link" href="">Menu</a>
+      </li>
+      <li class="menu-list__item">
+        <a class="menu-list__link" href="">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- MODAL -->
+  <div class="backdrop is-hidden">
+    <div class="modal">
+      <div class="modal-container">
+        <h2 class="modal__title">Order Form</h2>
+        <button class="modal-close">
+          <svg class="" width="12" height="12">
+            <use href="/src/images/header/close-open-menu.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form action="" class="form">
+          <label for="user_text" class="label">Name </label>
+          <input
+            class="input"
+            name="username"
+            type="text"
+            placeholder="Your name"
+            required
+            id="user_text"
+            required
+            minlength="3"
+            maxlength="25"
+          />
+
+          <label for="user_tel" class="label">Phone number </label>
+          <input
+            class="input"
+            name="usertel"
+            type="tel"
+            placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            required
+            id="user_tel"
+          />
+
+          <label for="user_email" class="label">E-mail</label>
+          <input
+            class="input"
+            name="useremail"
+            type="email"
+            placeholder="example@gmail.com"
+            required
+            id="user_email"
+          />
+          <button class="modal-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
