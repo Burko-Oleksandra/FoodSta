@@ -269,14 +269,16 @@
     border: 0.854167px solid #FFE550;
     background: #FFFFFF;
     border-radius: 30px;
-    outline: transparent;
+    
 
     font-size: 12px;
     line-height: 1.5;
     color: #505050;
 
     padding: 12px 12px;
-
+&:focus {
+    outline: 1.5px solid #FFE550;
+}
     @media screen and (min-width:768px) {
         width: 279px;
         margin-bottom: 0;
@@ -284,12 +286,22 @@
 }
 
 .footer__input:not(:placeholder-shown):required:invalid {
-    border: 1px solid #FF705D;
+
+    border: 0.854167px solid #FF705D;
+    &:focus {
+        outline: 0.854167px solid #FF705D;
+    }
 }
 
 .footer__input:not(:placeholder-shown):required:valid {
-    border: 1px solid #7EB101;
+    border: 0.854167px solid #7EB101;
+    &:focus {
+        outline: 0.854167px solid #7EB101;
+    }
 }
+
+
+
 
 .footer__input-warning {
     display: flex;
