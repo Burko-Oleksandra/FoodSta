@@ -18,6 +18,8 @@
     background-image: url(../images/offerings/offerings-bg-mob-3x.png);
   }
   @media screen and (min-width: 768px) {
+    position: relative;
+    transform: translateY(-85px);
     background-image: url(../images/offerings/offerings-bg-tablet.png);
     padding-top: 108px;
     padding-bottom: 43px;
