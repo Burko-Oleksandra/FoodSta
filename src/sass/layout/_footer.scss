@@ -1,4 +1,6 @@
 .footer__background {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #FEFEFE;
     background-image: url(../images/footer/mobile/bottom@x1.png), url(../images/footer/mobile/left@x1.png), url(../images/footer/mobile/right@x1.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
@@ -41,10 +43,6 @@
 }
 
 .footer__logo-nav-sub {
-    @media screen and (max-width:767px) {
-        padding-top: 64px;
-    }
-
     @media screen and (min-width:1280px) {
         display: flex;
     }
@@ -71,9 +69,10 @@
 
 .site-navigation__list {
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     color: #000000;
     margin-bottom: 40px;
+    margin-top: 4px;
 
     @media screen and (min-width:768px) {
         display: flex;
@@ -118,7 +117,7 @@
 .footer__form {
     @media screen and (min-width:768px) {
         display: flex;
-        margin-bottom: 12px;
+        margin-bottom: 4px;
     }
 }
 
@@ -231,7 +230,6 @@
 .footer__services-copyright {
     @media screen and (max-width: 767px) {
         position: relative;
-        padding-bottom: 60px;
     }
 
     @media screen and (min-width:768px) {
@@ -248,6 +246,7 @@
     @media screen and (min-width:768px) {
         margin-left: auto;
         font-size: 12px;
+        line-height: 1.17;
     }
 }
 
