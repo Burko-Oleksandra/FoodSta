@@ -17,7 +17,16 @@
                <p class="form__title">Subscribe</p>
                <form class="footer__form" autocomplete="off">
                   <label class="footer__laber">
-                     <input class="footer__input" name="mail" type="email" id="mail" placeholder="Enter your email">
+                     <input class="footer__input" name="mail" type="email" id="mail" placeholder="Enter your email"
+                     minlength=""
+                     required>
+                     <span class="footer__input-warning">
+                       <svg class="footer__input-warning-icon"
+                       width="12" height="12">
+                        <use href="/src/images/footer/icon.svg#icon-warning"></use>
+                       </svg>
+                       Not a valid email address (example@email.com)
+                     </span>
                   </label>
                   <button class="footer__button" type="submit">Subscribe</button>
                </form>
