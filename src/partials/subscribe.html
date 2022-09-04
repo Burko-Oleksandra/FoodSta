@@ -39,16 +39,24 @@
       varius enim in eros elementum tristique.
     </p>
     <div class="subscribe__input">
-      <input
-        class="subscribe__email"
-        type="email"
-        name="mail"
-        id="email"
-        placeholder="Enter your email"
-      />
-      <p class="subscribe__error">
-        Not a valid email address (example@email.com)
-      </p>
+      <div class="subscribe__field">
+        <input
+          class="subscribe__email"
+          name="mail"
+          type="email"
+          id="mail"
+          placeholder="Enter your email"
+          minlength=""
+          required
+        />
+        <span class="subscribe__warning">
+          <svg class="subscribe__warning-icon" width="12" height="12">
+            <use href="/src/images/customers-say/icons.svg#icon-warning"></use>
+          </svg>
+          Not a valid email address (example@email.com)
+        </span>
+      </div>
+
       <button type="submit" class="btn subscribe__btn">Subscribe</button>
     </div>
   </div>
