@@ -1,6 +1,6 @@
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <symbol id="left" viewBox="0 0 47 40">
+    <symbol id="left" viewBox="2 0 40 33">
       <path fill="#fff" style="fill:var(--color1, #fff)" d="M3.333 26.667v-20A6.667 6.667 0 0 1 10 0h26.667a6.667 6.667 0 0 1 6.667 6.667v20a6.667 6.667 0 0 1-6.667 6.667H10a6.667 6.667 0 0 1-6.667-6.667z"/>
       <path d="m14.542 17.421 11.61 11.062a1.041 1.041 0 0 0 1.438 0l.013-.012a.964.964 0 0 0 .299-.695.944.944 0 0 0-.299-.695L16.67 16.664 27.603 6.252a.974.974 0 0 0 .299-.695.944.944 0 0 0-.299-.695l-.012-.013a1.041 1.041 0 0 0-1.438 0l-11.61 11.062a1.044 1.044 0 0 0 0 1.508z"/>
     </symbol>
