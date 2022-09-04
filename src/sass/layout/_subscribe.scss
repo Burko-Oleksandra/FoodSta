@@ -44,14 +44,11 @@
   margin-left: auto;
   margin-right: auto;
 
-  font-size: 28px;
-  line-height: 1.21;
-
-  @media screen and(min-width:768px) {
+  @media screen and (min-width: 768px) {
     width: 656px;
+
     margin-left: 0;
-    font-size: 42px;
-    line-height: 1.19;
+    margin-right: 0;
   }
 }
 
@@ -61,15 +58,11 @@
   margin-left: auto;
   margin-right: auto;
 
-  font-size: 14px;
-  line-height: 1.14;
-
   @media screen and (min-width: 768px) {
     width: 656px;
-    margin-left: 0;
     margin-bottom: 24px;
-    font-size: 16px;
-    line-height: 1.5;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -80,11 +73,12 @@
   text-align: right;
 
   @media screen and (min-width: 768px) {
-    width: 519px;
+    display: flex;
+    justify-content: start;
+
     margin-left: 0;
     margin-right: 0;
-    display: flex;
-    flex-direction: row;
+    min-width: 100%;
   }
 }
 
@@ -95,36 +89,33 @@
   border: 1px solid $accentColor;
   border-radius: 30px;
 
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: #505050;
+  }
+
   @media screen and (min-width: 768px) {
     width: 395px;
     margin-bottom: 0;
     margin-right: 22px;
+    width: 395px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 32px;
   }
 }
 
-.subscribe__email::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.5;
-
-  color: #505050;
-}
-
 .subscribe__btn {
+  width: 103px;
+  height: 42px;
+
   margin-left: auto;
   padding: 11px 22px;
-  border-radius: 30px;
-  border: none;
-  cursor: pointer;
-
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 1.53;
 
   color: $textColor;
-  background-color: $hoverColor;
 
   @media screen and (min-width: 768px) {
     margin-left: 0;
