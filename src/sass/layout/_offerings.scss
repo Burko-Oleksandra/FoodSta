@@ -8,21 +8,47 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: linear-gradient
-        (rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/offerings/offerings-bg-mob-2x.png);
+    background-image: url(../images/offerings/offerings-bg-mob-2x.png);
   }
   @media (min-device-pixel-ratio: 3),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/offerings/offerings-bg-mob-3x.png);
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../images/offerings/offerings-bg-mob-3x.png);
   }
   @media screen and (min-width: 768px) {
+    position: relative;
+    transform: translateY(-85px);
+    padding-top: 60px;
     background-image: url(../images/offerings/offerings-bg-tablet.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/offerings-bg-tablet-2x.png);
+    }
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/offerings/offerings-bg-tablet-3x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/offerings/bg-desktop-1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/bg-desktop-2x.png);
+    }
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/offerings/bg-desktop-3x.png);
+    }
+  }
+}
+.offerings__container {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 /* apple */
@@ -38,6 +64,20 @@
   max-width: 100%;
   border-radius: 50%;
   border: 3px solid rgba(255, 255, 255, 0.5);
+  @media screen and (min-width: 768px) {
+    width: 357px;
+    height: 357px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 108px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 550px;
+    height: 550px;
+    margin-top: 151px;
+    margin-bottom: 43px;
+    margin-right: 90px;
+  }
 }
 .apple__item {
   width: 255.56px;
@@ -46,23 +86,119 @@
   background: #fefefe;
   display: flex;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    width: 325.85px;
+    height: 325.85px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 502px;
+    height: 502px;
+  }
 }
 .apple__picture {
   position: absolute;
   transform: translateY(-42px);
+  @media screen and (min-width: 768px) {
+    transform: translateY(-53px);
+  }
+  @media screen and (min-width: 1280px) {
+    transform: translateY(-78px);
+  }
+}
+.apple__shadow {
+  width: 128px;
+  height: 44px;
+  z-index: 0;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #2f583f 0%,
+    rgba(105, 105, 105, 0) 100%
+  );
+  position: absolute;
+  transform: translateY(185px);
+  filter: blur(13.2364px);
+  @media screen and (min-width: 768px) {
+    width: 163px;
+    height: 56px;
+    transform: translateY(236px);
+    filter: blur(16.8764px);
+  }
+  @media screen and (min-width: 1280px) {
+    width: 252px;
+    height: 87px;
+    transform: translateY(364px);
+    filter: blur(26px);
+  }
+}
+.tablet-apple {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+.shadow {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 318px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.shadow__list {
+  display: flex;
+  gap: 44px;
+  align-items: flex-end;
+  margin-left: 29px;
+  position: absolute;
+  transform: translateY(-53px);
 }
 /* h2 p */
+.desktop__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 180px;
+  }
+}
 .main {
   display: flex;
   flex-direction: column;
 }
 .main__title {
   margin-bottom: 28px;
+  width: 280px;
+  @media screen and (min-width: 768px) {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    width: 526px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    line-height: 1.19;
+  }
 }
 .main__text {
-  width: 100%;
-  min-width: 272px;
+  width: 272px;
   margin-bottom: 28px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.18;
+    margin-bottom: 40px;
+    width: 500px;
+  }
+  @media screen and (min-width: 1280px) {
+    line-height: 1.5;
+  }
 }
 /* about */
 .about {
@@ -70,13 +206,28 @@
   flex-direction: column;
   gap: 28px;
   margin-bottom: 28px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 116px;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 573px;
+    gap: 67px;
+    margin-bottom: 32px;
+  }
 }
 .about__item {
-  width: 100%;
-  min-width: 252px;
+  width: 252px;
+  @media screen and (min-width: 1280px) {
+    width: 253px;
+  }
 }
 .about__title {
   margin-bottom: 16px;
+  @media screen and (min-width: 1280px) {
+    line-height: 1.38;
+  }
 }
 .about__title__rocket::before {
   content: '';
@@ -108,11 +259,20 @@
   justify-content: center;
   margin-bottom: 8px;
 }
+.about__text {
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
 /* btn list */
 .btn-list {
   display: flex;
   gap: 24px;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+  }
 }
 .btn {
   width: 98px;
@@ -130,11 +290,18 @@
   height: 40px;
   background: #ffffff;
   border: 2px solid #7eb101;
+  &:hover,
+  &:focus {
+    border-color: #597d00;
+  }
 }
 .read-more {
   font-size: 13.6667px;
   line-height: 1.47;
   color: #000000;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 .read-more::after {
   content: url(../images/offerings/bird.svg);
