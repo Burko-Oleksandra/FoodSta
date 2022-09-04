@@ -144,6 +144,7 @@
 
   padding: 11px 22px;
   margin-left: 20px;
+  transition: background-color 250ms $timingFunction;
 
   @media screen and (max-width: 767px) {
     display: flex;
