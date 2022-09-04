@@ -2,19 +2,13 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-}
-
-.container.subscribe {
-  display: flex;
-  flex-direction: column;
 
   @media screen and(min-width:768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding-top: 82px;
   }
 
   @media screen and(min-width:1280px) {
-    display: inline-block;
+    padding-top: 0px;
   }
 }
 
@@ -26,14 +20,17 @@
 
   @media screen and (min-width: 768px) {
     width: 281px;
+    left: 78%;
+    top: -2%;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 546px;
+    width: 608px;
+    top: 24%;
   }
 }
 
-.subscribe__title {
+.title {
   width: 280px;
   margin-bottom: 20px;
   margin-left: auto;
@@ -81,7 +78,7 @@
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
-  border: 1px solid $accentColor;
+  border: 0.85px solid $accentColor;
   border-radius: 30px;
 
   &::placeholder {
@@ -91,10 +88,18 @@
     color: #505050;
   }
 
+  &:invalid {
+    border-color: #ff705d;
+  }
+
+  &:valid {
+    border-color: $iconColor;
+  }
+
   @media screen and (min-width: 768px) {
+    width: 395px;
     margin-bottom: 0;
     margin-right: 22px;
-    width: 395px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -110,6 +115,10 @@
   padding: 11px 22px;
 
   color: $textColor;
+
+  &:active {
+    background-color: #b5ff00;
+  }
 
   @media screen and (min-width: 768px) {
     margin-left: 0;
