@@ -30,6 +30,7 @@
     (min-resolution: 288dpi),
     (min-resolution: 3dppx) {
     background-image: url(../images/offerings/offerings-bg-tablet-3x.png);
+
     }
   }
   @media screen and (min-width: 1280px) {
@@ -55,6 +56,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 75px;
+
   }
 }
 /* apple */
@@ -113,22 +115,26 @@
   width: 128px;
   height: 44px;
   z-index: 0;
-  background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #2f583f 0%,
+    rgba(105, 105, 105, 0) 100%
+  );
   position: absolute;
   transform: translateY(185px);
   filter: blur(13.2364px);
-  @media screen and (min-width: 768px) { 
-  width: 163px;
-  height: 56px;
-  transform: translateY(236px);
-  filter: blur(16.8764px);
-}
-  @media screen and (min-width: 1280px) { 
-  width: 252px;
-  height: 87px;
-  transform: translateY(364px);
-  filter: blur(26px);
-}
+  @media screen and (min-width: 768px) {
+    width: 163px;
+    height: 56px;
+    transform: translateY(236px);
+    filter: blur(16.8764px);
+  }
+  @media screen and (min-width: 1280px) {
+    width: 252px;
+    height: 87px;
+    transform: translateY(364px);
+    filter: blur(26px);
+  }
 }
 .tablet-apple {
 @media screen and (min-width: 768px) {
@@ -141,13 +147,13 @@ align-items: flex-end;
 .shadow {
   display: none;
   @media screen and (min-width: 768px) {
-  display: flex;
-  width: 318px;
-  margin-bottom: 60px;
-}
+    display: flex;
+    width: 318px;
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 1280px) {
-  display: none;
-}
+    display: none;
+  }
 }
 .shadow__list {
   display: flex;
@@ -159,9 +165,9 @@ align-items: flex-end;
 }
 /* h2 p */
 .desktop__about {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
   @media screen and (min-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
@@ -304,16 +310,16 @@ align-items: flex-end;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    border-color: #597D00;
-}
+    border-color: #597d00;
+  }
 }
 .read-more {
   font-size: 13.6667px;
   line-height: 1.47;
   color: #000000;
   @media screen and (min-width: 1280px) {
-  display: none;
-}
+    display: none;
+  }
 }
 .read-more::after {
   content: url(../images/offerings/bird.svg);
