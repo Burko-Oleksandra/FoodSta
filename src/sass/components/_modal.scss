@@ -50,16 +50,23 @@
   color: #2c2c2c;
 }
 
+.modal__icon {
+  pointer-events: none;
+}
+
 .form {
   margin-top: 20px;
 
-  transition: border-color 250ms $timingFunction,
-    background-color 250ms $timingFunction;
+  transition: border-color 250ms $timingFunction;
 
   &:invalid {
     .modal-btn {
       border-color: #ff705d;
-      background-color: #ff705d;
+
+      &:hover,
+      &:focus {
+        background-color: #ff705d;
+      }
     }
   }
 }
@@ -121,6 +128,7 @@
 }
 
 .modal-close {
+  cursor: pointer;
   border-radius: 50%;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
