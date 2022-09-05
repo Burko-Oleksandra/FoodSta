@@ -35,11 +35,13 @@
   font-size: 14px;
   line-height: 16px;
   color: #2c2c2c;
-  transition: color 250ms $timingFunction;
+  transition: color 250ms $timingFunction, text-decoration 250ms $timingFunction,
+    font-weight 250ms $timingFunction;
   &:hover,
   &:focus {
     color: #b5ff00;
     text-decoration: underline;
+    font-weight: 700;
   }
   @media screen and (max-width: 767px) {
     display: none;
