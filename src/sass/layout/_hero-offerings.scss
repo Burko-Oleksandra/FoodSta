@@ -1,0 +1,48 @@
+.hero-offerings {
+  width: 100%;
+  background-position-y: 369px;
+  background-position-x: center;
+  background-image: url(../images/offerings/offerings-bg-mob.png);
+  background-repeat: no-repeat;
+  background-size: 100% 1050px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/offerings/offerings-bg-mob-2x.png);
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../images/offerings/offerings-bg-mob-3x.png);
+  }
+  @media screen and (min-width: 768px) {
+    background-position-y: 361px;
+    background-size: 100% 1140px;
+    background-image: url(../images/offerings/offerings-bg-tablet.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/offerings-bg-tablet-2x.png);
+    }
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/offerings/offerings-bg-tablet-3x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    background-position-y: 447px;
+    background-size: 100% 824px;
+    background-image: url(../images/offerings/bg-desktop-1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/bg-desktop-2x.png);
+    }
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/offerings/bg-desktop-3x.png);
+    }
+  }
+}
