@@ -104,7 +104,8 @@
   line-height: calc(20 / 13);
   color: #2c2c2c;
   transition: background-color 250ms $timingFunction;
-  &:active {
+  &:active,
+  &:hover {
     background-color: #bbf330;
   }
 }
