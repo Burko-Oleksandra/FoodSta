@@ -1,0 +1,48 @@
+<!-- MODAL -->
+<div class="backdrop modal-js is-hidden">
+  <div class="modal">
+    <div class="modal-container">
+      <h2 class="modal__title">Order Form</h2>
+      <button class="modal-close close-modal">
+        <svg class="" width="12" height="12">
+          <use href="/src/images/header/close-open-menu.svg#icon-close"></use>
+        </svg>
+      </button>
+      <form action="" class="form">
+        <label for="user_text" class="label">Name </label>
+        <input
+          class="input"
+          name="username"
+          type="text"
+          placeholder="Your name"
+          required
+          id="user_text"
+          minlength="3"
+          maxlength="25"
+          required
+        />
+
+        <label for="user_tel" class="label">Phone number </label>
+        <input
+          class="input"
+          name="usertel"
+          type="tel"
+          placeholder="+38(0_ _) _ _ _   _ _   _ _"
+          required
+          id="user_tel"
+        />
+
+        <label for="user_email" class="label">E-mail</label>
+        <input
+          class="input"
+          name="useremail"
+          type="email"
+          placeholder="example@gmail.com"
+          required
+          id="user_email"
+        />
+        <button class="modal-btn" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
