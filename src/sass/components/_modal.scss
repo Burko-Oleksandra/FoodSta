@@ -53,13 +53,11 @@
 .form {
   margin-top: 20px;
 
-  transition: border-color 250ms $timingFunction,
-    background-color 250ms $timingFunction;
+  transition: border-color 250ms $timingFunction;
 
   &:invalid {
     .modal-btn {
       border-color: #ff705d;
-      background-color: #ff705d;
     }
   }
 }
