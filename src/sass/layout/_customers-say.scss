@@ -1,8 +1,9 @@
 .customer {
   background-image: url(../images/customers-say/bg-mob.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  // background-size: cover;
   background-position: bottom;
+  background-size: 100% 769px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -19,6 +20,7 @@
   @media screen and (min-width: 768px) {
     padding-top: 60px;
     padding-bottom: 120px;
+    background-size: 100% 544px;
     background-image: url(../images/customers-say/bg-tab.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -29,6 +31,7 @@
   @media screen and (min-width: 1280px) {
     padding-top: 100px;
     padding-bottom: 200px;
+    background-size: 100% 647px;
     background-image: url(../images/customers-say/bg-desk.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
