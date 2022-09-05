@@ -16,6 +16,7 @@
 .modal {
   max-width: 458px;
   width: 100%;
+  height: 449px;
   background: #ffe550;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 30px;
@@ -33,8 +34,11 @@
 .modal-container {
   display: flex;
   flex-direction: column;
-  padding: 32px 20px;
+  padding: 20px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    padding: 32px;
+  }
 }
 
 .modal-title {
@@ -56,6 +60,9 @@
   height: 48px;
   padding-left: 12px;
   outline: none;
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
   &::placeholder {
     font-weight: 400;
     font-size: 16px;
@@ -68,10 +75,6 @@
   &:not(:placeholder-shown):required:invalid {
     border-color: #ff705d;
   }
-}
-
-.input:not(:last-child) {
-  margin-bottom: 24px;
 }
 
 .label {
@@ -96,6 +99,10 @@
   font-size: 13px;
   line-height: calc(20 / 13);
   color: #2c2c2c;
+  transition: background-color 250ms $timingFunction;
+  &:active {
+    background-color: #bbf330;
+  }
 }
 
 .modal-close {
@@ -112,4 +119,6 @@
   justify-content: center;
   align-items: center;
   border-color: transparent;
+  width: 32px;
+  height: 32px;
 }
