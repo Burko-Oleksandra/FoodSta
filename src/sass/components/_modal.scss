@@ -74,11 +74,8 @@
   }
   &:not(:placeholder-shown):required:valid {
     border-color: #7eb101;
-    .modal-btn {
-      background-color: #7eb101;
-    }
   }
-  &:not(:placeholder-shown):required:invalid .modal-btn {
+  &:not(:placeholder-shown):required:invalid {
     border-color: #ff705d;
   }
 }
@@ -133,14 +130,16 @@
 .modal-error {
   display: flex;
   position: absolute;
-  align-items: center;
-  justify-content: center;
+  align-items: baseline;
   font-size: 11px;
   line-height: 1.5;
   color: #ff705d;
   margin-top: -25px;
   opacity: 0;
   left: 32px;
+  &--last {
+    margin-top: -32px;
+  }
 
   @media screen and (min-width: 768px) {
     font-weight: 500;
