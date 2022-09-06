@@ -11,6 +11,7 @@
   flex-direction: column;
   align-items: center;
   z-index: 2;
+  transition: opacity 250ms $timingFunction;
 }
 
 .modal {
@@ -24,6 +25,8 @@
   position: absolute;
   top: 60px;
   z-index: 2;
+  transition: opacity 250ms $timingFunction;
+
   @media screen and (min-width: 768px) {
     top: 100px;
   }
@@ -50,6 +53,10 @@
   color: #2c2c2c;
 }
 
+.modal__icon {
+  pointer-events: none;
+}
+
 .form {
   margin-top: 20px;
 
@@ -58,6 +65,10 @@
   &:invalid {
     .modal-btn {
       border-color: #ff705d;
+      &:hover,
+      &:focus {
+        background-color: #ff705d;
+      }
     }
   }
 }
@@ -119,9 +130,10 @@
 }
 
 .modal-close {
+  cursor: pointer;
   border-radius: 50%;
   background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
   position: absolute;
   right: 12px;
   top: 12px;
@@ -134,6 +146,12 @@
   border-color: transparent;
   width: 32px;
   height: 32px;
+  transition: box-shadow 250ms $timingFunction;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  }
 }
 
 .modal-error {
