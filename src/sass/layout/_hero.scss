@@ -1,16 +1,14 @@
 .hero {
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 55px;
+    padding-bottom: 52px;
     padding-top: 60px;
     position: relative;
   }
 
   @media screen and (min-width: 1280px) {
-    //
     padding-bottom: 100px;
-    //
     padding-top: 159px;
     position: relative;
   }
@@ -58,7 +56,7 @@
   }
 
   &__text {
-    width: 100%;
+    width: 266px;
     line-height: 1.5;
     margin-bottom: 28px;
     @media screen and (min-width: 768px) {

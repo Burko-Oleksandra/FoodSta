@@ -15,7 +15,9 @@
 
 .modal {
   max-width: 458px;
+
   width: 100%;
+
   background: #ffe550;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 30px;
@@ -32,9 +34,13 @@
 
 .modal-container {
   display: flex;
+  height: 449px;
   flex-direction: column;
-  padding: 32px 20px;
+  padding: 20px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    padding: 32px;
+  }
 }
 
 .modal-title {
@@ -44,8 +50,25 @@
   color: #2c2c2c;
 }
 
+.modal__icon {
+  pointer-events: none;
+}
+
 .form {
   margin-top: 20px;
+
+  transition: border-color 250ms $timingFunction;
+
+  &:invalid {
+    .modal-btn {
+      border-color: #ff705d;
+
+      &:hover,
+      &:focus {
+        background-color: #ff705d;
+      }
+    }
+  }
 }
 
 .input {
@@ -56,6 +79,10 @@
   height: 48px;
   padding-left: 12px;
   outline: none;
+  margin-bottom: 24px;
+  &--last {
+    margin-bottom: 32px;
+  }
   &::placeholder {
     font-weight: 400;
     font-size: 16px;
@@ -70,10 +97,6 @@
   }
 }
 
-.input:not(:last-child) {
-  margin-bottom: 24px;
-}
-
 .label {
   margin-bottom: 2px;
   display: flex;
@@ -81,6 +104,7 @@
   font-size: 16px;
   line-height: calc(22 / 16);
   color: #2c2c2c;
+  margin-left: 12px;
 }
 
 .modal-btn {
@@ -96,9 +120,15 @@
   font-size: 13px;
   line-height: calc(20 / 13);
   color: #2c2c2c;
+  transition: background-color 250ms $timingFunction;
+  &:active,
+  &:hover {
+    background-color: #bbf330;
+  }
 }
 
 .modal-close {
+  cursor: pointer;
   border-radius: 50%;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
@@ -112,4 +142,36 @@
   justify-content: center;
   align-items: center;
   border-color: transparent;
+  width: 32px;
+  height: 32px;
+}
+
+.modal-error {
+  display: flex;
+  position: absolute;
+  align-items: baseline;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #ff705d;
+  margin-top: -25px;
+  opacity: 0;
+  left: 32px;
+  &--last {
+    margin-top: -32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.4;
+    left: 44px;
+  }
+}
+
+.input:not(:placeholder-shown):required:invalid + .modal-error {
+  opacity: 1;
+}
+
+.modal-error__icon {
+  margin-right: 4px;
 }
