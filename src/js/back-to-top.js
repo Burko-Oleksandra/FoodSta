@@ -9,10 +9,10 @@ function backToTop() {
     }
   });
 
-  button.on('click', e => {
-    e.preventDefault();
-    $('html').animate({ scrollTop: 0 }, 1000);
-  });
+  // button.on('click', e => {
+  //   e.preventDefault();
+  //   $('html').animate({ scrollTop: 0 }, 5000);
+  // });
 }
 
 backToTop();
